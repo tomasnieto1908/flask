@@ -1,6 +1,6 @@
 html {
   font-family: sans-serif;
-  background: hwb(0 100% 0%);
+  background: rgb(0, 0, 0);
   padding: 1rem;
 }
 body {
@@ -50,7 +50,7 @@ header .action {
   padding: 0 1rem 1rem;
 }
 .content > header {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #000000;
   display: flex;
   align-items: flex-end;
 }
@@ -61,7 +61,7 @@ header .action {
 .flash {
   margin: 1em 0;
   padding: 1em;
-  background: #cae6f6;
+  background: hwb(0 97% 0%);
   border: 1px solid rgb(0, 17, 255);
 }
 .post > header {
@@ -77,7 +77,7 @@ header .action {
   margin-bottom: 0;
 }
 .post .about {
-  color: slategray;
+  color: #000000;
   font-style: italic;
 }
 .post .body {
