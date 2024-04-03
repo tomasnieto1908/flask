@@ -13,14 +13,14 @@
   <textarea name="body" id="body">
 {{ request.form['body'] or post['body'] }}</textarea
   >
-  <input type="submit" value="Save" />
+  <input type="submit" value="guardar" />
 </form>
 <hr />
 <form action="{{ url_for('blog.delete', id=post['id']) }}" method="post">
   <input
     class="danger"
     type="submit"
-    value="Delete"
+    value="borrar"
     onclick="return confirm('Are you sure?');"
   />
 </form>
