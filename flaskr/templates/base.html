@@ -8,6 +8,7 @@
     <li><span>{{ g.user['username'] }}</span></li>
     <li><span>{{ g.user['email'] }}</span></li>
     <li><a href="{{ url_for('auth.updateemail') }}">cambiar email</a> </li>
+    <li><a href="{{ url_for('auth.deleteUser') }}">eliminar</a> </li>
     <li><a href="{{ url_for('auth.logout') }}">salida</a> </li>
       {% else %}
 

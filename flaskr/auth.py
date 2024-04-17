@@ -120,17 +120,19 @@ def updateemail():
     return render_template('auth/updateemail.html')
 
 @bp.route('/deleteUser', methods=('GET', 'POST'))
-def deleteUser(id):
+def deleteUser():
     if request.method == 'POST':
         error = None
         db = get_db()
         
-        if error is not None:            
+        if error is None:            
             db.execute(
                 'DELETE FROM user  WHERE id = ?',
-                (g.user[id])
+                (g.user['id'],)
             )
             db.commit()
             return redirect(url_for('index'))
+        else:
+             flash(error)
 
     return render_template('auth/updateemail.html')
